@@ -35,7 +35,7 @@ export default function SequenceScroll() {
                     const img = new Image();
                     // Pad index with zeros (001, 002, etc.)
                     const strIndex = i.toString().padStart(3, "0");
-                    img.src = `/sequence/frame-${strIndex}.png`;
+                    img.src = `/sequence/frame-${strIndex}.webp`;
                     img.onload = () => {
                         loadedImages[i - 1] = img;
                         resolve();
